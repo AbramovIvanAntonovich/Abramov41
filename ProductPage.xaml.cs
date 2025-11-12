@@ -23,6 +23,8 @@ namespace Abramov41
         public ProductPage()
         {
             InitializeComponent();
+            var CurrentProduct = ABRAMOV41Entities.GetContext().Product.ToList();
+            ProductListView.ItemsSource = CurrentProduct;
         }
 
         private void BtnGo_Click(object sender, RoutedEventArgs e)

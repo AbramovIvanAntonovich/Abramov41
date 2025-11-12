@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Abramov41"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" FontFamily="Comic Sans MS" Icon="/rec/icon.ico" Background="#FFFFCC99">
+        Title="Abramov41" Height="450" Width="800" FontFamily="Comic Sans MS" Icon="/rec/icon.ico" Background="#FFFFCC99">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -14,7 +14,7 @@
             <RowDefinition Height="25"></RowDefinition>
         </Grid.RowDefinitions>
         <Image Source="/rec/logo.png" HorizontalAlignment="Left" />
-        <TextBlock Text="Header" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35"></TextBlock>
+        <TextBlock Text="ООО 41 РАЗМЕР" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35"></TextBlock>
         <Button Name="BtnBack" Content="Назад" HorizontalAlignment="Right" Click="BtnBack_Click" ></Button>
         <Frame Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="1" ContentRendered="MainFrame_ContentRendered" Background="#FFFFFFFF"></Frame>
         
