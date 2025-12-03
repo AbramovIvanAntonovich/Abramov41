@@ -23,7 +23,7 @@ namespace Abramov41
             return _context;
         }
         public ABRAMOV41Entities()
-            : base("name=ABRAMOV41Entities")
+            : base("name=ABRAMOV41Entities1")
         {
         }
     

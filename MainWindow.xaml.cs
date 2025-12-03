@@ -23,7 +23,7 @@ namespace Abramov41
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new ProductPage());
+            MainFrame.Navigate(new Authage());
             manager.MainFrame = MainFrame;
         }
 

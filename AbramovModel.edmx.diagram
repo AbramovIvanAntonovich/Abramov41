@@ -4,16 +4,17 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="a7d971d10e394d00b0913dad949540c3" Name="Diagram1">
-        <EntityTypeShape EntityType="ABRAMOV41Model.Order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="ABRAMOV41Model.OrderProduct" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="ABRAMOV41Model.PickUpPoint" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="ABRAMOV41Model.Product" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
-        <EntityTypeShape EntityType="ABRAMOV41Model.Role" Width="1.5" PointX="5.75" PointY="5.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="ABRAMOV41Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ABRAMOV41Model.User" Width="1.5" PointX="8" PointY="5" IsExpanded="true" />
+      <Diagram DiagramId="413f7a6c72bb47ff9450f202dcd6afd7" Name="Diagram1">
+        <EntityTypeShape EntityType="ABRAMOV41Model.Order" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABRAMOV41Model.OrderProduct" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABRAMOV41Model.PickUpPoint" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABRAMOV41Model.Product" Width="1.5" PointX="5.25" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABRAMOV41Model.Role" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABRAMOV41Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ABRAMOV41Model.User" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
         <AssociationConnector Association="ABRAMOV41Model.FK__OrderProd__Order__2D27B809" ManuallyRouted="false" />
         <AssociationConnector Association="ABRAMOV41Model.FK_Order_PickUpPoint" ManuallyRouted="false" />
+        <AssociationConnector Association="ABRAMOV41Model.FK_Order_User" ManuallyRouted="false" />
         <AssociationConnector Association="ABRAMOV41Model.FK__OrderProd__Produ__2E1BDC42" ManuallyRouted="false" />
         <AssociationConnector Association="ABRAMOV41Model.FK__User__UserRole__267ABA7A" ManuallyRouted="false" />
       </Diagram>

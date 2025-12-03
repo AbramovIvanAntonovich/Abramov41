@@ -1,0 +1,39 @@
+﻿<Page x:Class="Abramov41.Authage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Abramov41"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Authage" FontFamily="Comic Sans MS">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Логин" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="20" Margin="10"></TextBlock>
+        <TextBlock Grid.Row="1" Text="Пароль" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="20" Margin="10"></TextBlock>
+        <TextBox Name="LoginTB" Grid.Column="1" Width="175" Height="35" VerticalAlignment="Bottom" FontSize="20" Margin="10"></TextBox>
+        <TextBox Name="PassTB" Grid.Column="1" Grid.Row="1" Width="175" Height="35" VerticalAlignment="Top" FontSize="20" Margin="10"></TextBox>
+        <Button Name="LogInBtn" Grid.Row="2" Grid.Column="1" Content="Войти" Click="LogInBtn_Click"></Button>
+        <Button Name="GuestBtn" Grid.Row="2" Content="Войти как гость" Click="GuestBtn_Click"></Button>
+        <StackPanel Name="CapchaPanel" Orientation="Vertical" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                <TextBlock Name="capchaOneWord" FontSize="22" Margin="30,0,0,0"></TextBlock>
+                <TextBlock Name="capchaTwoWord" FontSize="22" TextDecorations="Strikethrough" Margin="0,5,0,0"></TextBlock>
+                <TextBlock Name="capchaThreeWord" FontSize="22" TextDecorations="Strikethrough" ></TextBlock>
+                <TextBlock Name="capchaFourWord" FontSize="22" TextDecorations="Strikethrough" Margin="0,10,0,0"></TextBlock>
+            </StackPanel >
+            <TextBlock Text="Введите капчу" FontSize="22" Margin="5"></TextBlock>
+            <TextBox Name="CurrentCapcha"  FontSize="22" Width="175" Height="35" Margin="5"></TextBox>
+        </StackPanel>
+        
+    </Grid>
+</Page>

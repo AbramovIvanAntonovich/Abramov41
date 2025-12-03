@@ -64,10 +64,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AbramovModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AbramovModel.Context.tt</DependentUpon>
+    </Compile>
     <Compile Include="AbramovModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AbramovModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AbramovModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AbramovModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Authage.xaml.cs">
+      <DependentUpon>Authage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Order.cs">
       <DependentUpon>AbramovModel.tt</DependentUpon>
@@ -94,20 +107,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Authage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AbramovModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AbramovModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AbramovModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AbramovModel.edmx</DependentUpon>
-    </Compile>
     <Compile Include="AddEditPage.xaml.cs">
       <DependentUpon>AddEditPage.xaml</DependentUpon>
     </Compile>
@@ -169,16 +176,6 @@
     <Resource Include="rec\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AbramovModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>AbramovModel.Context.cs</LastGenOutput>
-      <DependentUpon>AbramovModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="AbramovModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AbramovModel.edmx</DependentUpon>
-      <LastGenOutput>AbramovModel.cs</LastGenOutput>
-    </Content>
     <Resource Include="photoImport\B320R5.jpg" />
     <Resource Include="photoImport\D329H3.jpg" />
     <Resource Include="photoImport\D572U8.jpg" />
@@ -194,6 +191,17 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="AbramovModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AbramovModel.edmx</DependentUpon>
+      <LastGenOutput>AbramovModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AbramovModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AbramovModel.edmx</DependentUpon>
+      <LastGenOutput>AbramovModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
