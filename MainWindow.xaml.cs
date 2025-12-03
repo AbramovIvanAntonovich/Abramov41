@@ -40,4 +40,5 @@ namespace Abramov41
             manager.MainFrame.GoBack();
         }
     }
+    
 }

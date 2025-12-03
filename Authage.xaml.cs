@@ -68,31 +68,28 @@ namespace Abramov41
             
             User user = ABRAMOV41Entities.GetContext().User.ToList().Find(p => p.UserLogin == login && p.UserPassword == password);
             
-            if (user != null)
+            if ((user != null)&&(currentlogin == 0))
             {
-                
-                if (currentlogin == 0)
-                {
                     manager.MainFrame.Navigate(new ProductPage(user));
                     LoginTB.Text = "";
                     PassTB.Text = "";
-                }
-                else if (sch == 4)
-                {
-                    manager.MainFrame.Navigate(new ProductPage(user));
-                    LoginTB.Text = "";
-                    PassTB.Text = "";
-                    currentlogin = 0;
-                    CapchaPanel.Visibility = Visibility.Hidden;
-                }
-                
+            }
+            else if ((user != null)&&(sch == 4))
+            {
+                LoginTB.Text = "";
+                PassTB.Text = "";
+                currentlogin = 0;
+                CapchaPanel.Visibility = Visibility.Hidden;
+                CurrentCapcha.Text = "";
+                manager.MainFrame.Navigate(new ProductPage(user));
+               
             }
             else 
             {
                 currentlogin++;
                 MessageBox.Show("Введены неверные данные");
-                
-                BlockLoginButton();
+                if (currentlogin > 1)
+                 BlockLoginButton();
                
                 CapchaPanel.Visibility = Visibility.Visible;
             }
